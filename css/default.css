@@ -19,6 +19,16 @@ ul {
   margin-left: 7px !important;
 }
 
+#Home .intro-header {
+  padding-top: 100px;
+  padding-bottom:50px;
+  text-align: center;
+  color: white;
+  height: 350px;
+  background-image: url('https://raw.githubusercontent.com/rdesfo/ElegantThemesBackgroundImages/master/Elegant_Background-14.jpg');
+  background-size: cover;
+}
+
 //
 //
 
