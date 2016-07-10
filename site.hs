@@ -59,7 +59,11 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateBodyCompiler
 
-
+    match "cv.html" $ do
+        route idRoute
+        compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
