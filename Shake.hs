@@ -11,11 +11,11 @@ main = shakeArgs shakeOptions{shakeFiles="dist-newstyle"} $ do
       () <- liftIO $ removeFiles "images" ["*.png"] -- remove images
       () <- liftIO $ removeFiles "posts" ["*.html"] -- remove posts
       () <- liftIO $ removeFiles "css" ["*.css"] -- remove css
-      () <- cmd "cp -ar _/site/. ."
+      () <- cmd "cp -ar ./_/site/. ."
       () <- liftIO $ removeFiles "_cache" ["//*"]
       () <- liftIO $ removeFiles "_site" ["//*"]
       () <- cmd "git add ."
       () <- cmd "git commit"
-      () <- cmd "git push gh-pages origin/gh-pages"
+      () <- cmd "git push"
       () <- cmd "git checkout master"
       cmd "git stash pop"
