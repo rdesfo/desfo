@@ -33,11 +33,12 @@ ul {
   font-size: 90px;
 }
 
-//
-//
-
 .navbar-default .navbar-nav > .active > a, .navbar-default
 .navbar-nav > .active > a:focus, ..navbar-default .navbar-nav >
 .active > a:hover {
   color: #f50057;
+}
+
+body {
+  position: relative;
 }
