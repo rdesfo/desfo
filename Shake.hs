@@ -1,7 +1,7 @@
 import Development.Shake
 
 -- shakeFiles testes shake to make .shake in dist-newstyle
-main = shakeArgs shakeOptions{shakeFiles="dist-newstyle"} $ do
+main = shakeArgs shakeOptions{shakeFiles=".stack-work"} $ do
     want ["push"]
 
     phony "push" $ do
