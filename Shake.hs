@@ -11,7 +11,7 @@ main = shakeArgs shakeOptions{shakeFiles=".stack-work"} $ do
       () <- liftIO $ removeFiles "images" ["*.png"] -- remove images
       () <- liftIO $ removeFiles "posts" ["*.html"] -- remove posts
       () <- liftIO $ removeFiles "css" ["*.css"] -- remove css
-      () <- cmd "cp -ar ./_/site/. ."
+      () <- cmd "cp -ar ./_site/. ."
       () <- liftIO $ removeFiles "_cache" ["//*"]
       () <- liftIO $ removeFiles "_site" ["//*"]
       () <- cmd "git add ."
