@@ -4,7 +4,7 @@ let
 
   inherit (nixpkgs) pkgs;
 
-  f = { mkDerivation, base, hakyll, shake, stdenv }:
+  f = { mkDerivation, base, hakyll, shake, stdenv, git }:
       mkDerivation {
         pname = "desfo-org";
         version = "0.1.0.1";
@@ -12,6 +12,7 @@ let
         isLibrary = false;
         isExecutable = true;
         executableHaskellDepends = [ base hakyll shake ];
+        executableSystemDepends = [ git ];
         license = stdenv.lib.licenses.unfree;
       };
 
