@@ -153,40 +153,44 @@ title: CV
             </div>
           </div>
         </div>
-        
         <!-- end veritude
         -->
-        <div class="row">
-          <div class="col-sm-4 text-center">
-            <p>
-              <time datetime="2002-01">Jan 2002</time> -
-              <time datetime="2008-01">Jan 2008</tim>
-            </p>
-          </div>
-          <div class="col-sm-4 text-center">
-            <div itemscope itemtype="http://schema.org/Organization">
-              <p>
-                <span itemprop="name">Maine Army National Guard</span>
-              </p>
+        <div itemprop="worksFor">
+          <div itemscope itemtype="http://schema.org/Organization">
+            <div class="row">
+              <div class="col-sm-4 text-center">
+                <p>
+                  <span itemprop="name">Maine Army National Guard</span>
+                </p>
+              </div>
+              <div class="col-sm-4 text-center">
+                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <p>
+                    <span itemprop="addressLocality">Caribou</span>,
+                    <span itemprop="addressRegion">ME</span>
+                  </p>
+                </div>
+              </div>
+              <div itemprop="employee" itemscope  itemtype="http://schema.org/OrganizationRole">
+                <div class="col-sm-4 text-center">
+                  <p>
+                    <span itemprop="startDate"><time datetime="2002-01">Jan 2002</time></span> -
+                    <span itemprop="endDate"><time datetime="2008-01">Jan 2008</tim></span>
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-sm-10 col-sm-offset-1 text-left">
+                    <p>
+                      <span itemprop="roleName">Combat Medic</span>
+                    </p>
+                    <ul>
+                      <li><span itemprop="description">Maintained spreadsheet for patients</span></li>
+                      <li><span itemprop="description">provided first aid as well as first aid training</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-4 text-center">
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-              <p>
-                <span itemprop="addressLocality">Caribou</span>,
-                <span itemprop="addressRegion">ME</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 text-left">
-            <p><span itemprop="jobTitle">Combat Medic</span>
-            </p>
-            <ul>
-              <li>Maintained spreadsheet for patients</li>
-              <li>provided first aid as well as first aid training</li>
-            </ul>
           </div>
         </div>
         <!-- end medic
