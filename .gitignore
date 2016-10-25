@@ -4,3 +4,6 @@ dist-newstyle
 
 # hakyll
 _*
+
+# stack
+.stack-work
