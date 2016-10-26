@@ -1,64 +1,69 @@
 ---
 title: Home
 ---
-
-    <section id="Home">
-      <div class="jumbotron shadow intro-header">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>Welcome</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="About">
-      <div class="h-card">
-        <div class="jumbotron shadow">
-          <h2 class="text-center">About</h2>
-          <div class="row">
-            <div class="col-md-7">
-              <p>My name is
-                <span class="p-name">Ryan Desfosses</span>
-                 and this page is my little corner of the web.  Below are some buttons to some of my other pages.
-              </p>
-              <hr>
-              <div class="btn-toolbar center-block">
-                <a href="https://github.com/rdesfo" class="u-url" rel="me">
-                  <button type="button" class="btn btn-success btn-lg margin-left">
-                    <i class="fa fa-github" aria-hidden="true"></i> github
-                  </button>
-                </a>
-                <a href="https://www.freecodecamp.com/rdesfo" rel="me">
-                  <button type="button" class="btn btn-danger btn-lg margin-left">
-                    <i class="fa fa-fire" aria-hidden="true"></i> freecodecamp
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 col-md-offset-1">
-	      <div class="image">
-                <img src="https://avatars3.githubusercontent.com/u/284815?v=3&s=460" id="myImage" class="img-responsive img-circle u-photo" alt="Ryan Desfosses">
+    <div class="row">
+      <div class="col-sm-12">
+        <section id="Home">
+          <div class="jumbotron shadow intro-header">
+            <div class="row">
+              <div class="col-md-12">
+                <h1>Welcome</h1>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
-    </section>
-    <section id="Activity">
-      <div class="jumbotron shadow">
-        <h2 class="text-center">Activity</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <section id="About">
+          <div class="h-card">
+            <div class="jumbotron shadow">
+              <h2 class="text-center">About</h2>
+              <div class="row">
+                <div class="col-sm-12">
+	          <div class="image">
+                    <img src="https://avatars3.githubusercontent.com/u/284815?v=3&s=460" id="myImage" class="img-responsive img-circle u-photo" alt="Ryan Desfosses">
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <p>My name is
+                    <span class="p-name">Ryan Desfosses</span>
+                     and this page is my little corner of the web.  Below are some buttons to some of my other pages.
+                  </p>
+                  <hr>
+                  <div class="btn-toolbar center-block">
+                    <a href="https://github.com/rdesfo" class="u-url" rel="me">
+                      <button type="button" class="btn btn-success btn-lg margin-left">
+                        <i class="fa fa-github" aria-hidden="true"></i> github
+                      </button>
+                    </a>
+                    <a href="https://www.freecodecamp.com/rdesfo" rel="me">
+                      <button type="button" class="btn btn-danger btn-lg margin-left">
+                        <i class="fa fa-fire" aria-hidden="true"></i> freecodecamp
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div> <!-- col-sm-4 -->
+      <div class="col-sm-8">
+        <section id="Activity">
+          <div class="jumbotron shadow">
+            <h2 class="text-center">Activity</h2>
           
-        $partial("templates/post-list.html")$
+            $partial("templates/post-list.html")$
 
-      </div>
-        <footer>
-          <hr>
-          <p class="text-center">© 2016</p>
-        </footer>
-      </div>
-    </section>
-
-<!--
-<h2>Posts</h2>
-$partial("templates/post-list.html")$
--->
+          </div>
+        </section>
+      </div> <!-- col-sm-8 -->
+    </div> <!-- row -->
+    <div class="row">
+      <footer>
+        <hr>
+        <p class="text-center">© 2016</p>
+      </footer>
+   </div>
