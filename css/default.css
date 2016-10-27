@@ -5,8 +5,11 @@
 body { 
     padding-top: 60px; 
 }
-#Activity div {
-  background-color: #337ab7;
+#sidebar {
+  padding-right: 0px;
+}
+#body {
+  padding-left: 0px;
 }
 .img-responsive {
   width: 100%;
@@ -20,9 +23,6 @@ body {
 #myImage:hover {
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
-}
-.shadow {
-  box-shadow: 1px 3px 10px 6px #ccc;
 }
 ul {
   margin: 0 0 0 0;
