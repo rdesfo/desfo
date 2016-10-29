@@ -16,7 +16,15 @@ title: Home
     </div>
     <div class="jumbotron shadow">
       <div class="row">
-        <div class="col-sm-2" id="sidebar">
+        <div class="col-sm-9" id="body">
+          <section id="Activity">
+            <h2 class="text-center">Activity</h2>
+          
+            $partial("templates/post-list.html")$
+
+          </section>
+        </div> <!-- col-sm-9 -->
+        <div class="col-sm-3" id="sidebar">
           <section id="About">
             <div class="h-card">
               <h2 class="text-center">About</h2>
@@ -53,14 +61,6 @@ title: Home
             </div>
           </section>
         </div> <!-- col-sm-3 -->
-        <div class="col-sm-10" id="body">
-          <section id="Activity">
-            <h2 class="text-center">Activity</h2>
-          
-            $partial("templates/post-list.html")$
-
-          </section>
-        </div> <!-- col-sm-9 -->
       </div> <!-- row -->
     </div>  <!-- jumbotron -->
     <div class="row">
