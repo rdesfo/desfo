@@ -14,11 +14,11 @@ title: Home
         </section>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-4" id="sidebar">
-        <section id="About">
-          <div class="h-card">
-            <div class="jumbotron shadow">
+    <div class="jumbotron shadow">
+      <div class="row">
+        <div class="col-sm-3" id="sidebar">
+          <section id="About">
+            <div class="h-card">
               <h2 class="text-center">About</h2>
               <div class="row">
                 <div class="col-sm-12">
@@ -43,24 +43,22 @@ title: Home
                         <i class="fa fa-fire" aria-hidden="true"></i> freecodecamp
                       </button>
                     </a>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
       </div> <!-- col-sm-4 -->
-      <div class="col-sm-8" id="body">
+      <div class="col-sm-9" id="body">
         <section id="Activity">
-          <div class="jumbotron shadow">
             <h2 class="text-center">Activity</h2>
           
             $partial("templates/post-list.html")$
 
-          </div>
-        </section>
-      </div> <!-- col-sm-8 -->
-    </div> <!-- row -->
+          </section>
+        </div> <!-- col-sm-8 -->
+      </div> <!-- row -->
+    </div>  <!-- jumbotron -->
     <div class="row">
       <footer>
         <hr>
