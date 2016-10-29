@@ -16,47 +16,51 @@ title: Home
     </div>
     <div class="jumbotron shadow">
       <div class="row">
-        <div class="col-sm-3" id="sidebar">
+        <div class="col-sm-2" id="sidebar">
           <section id="About">
             <div class="h-card">
               <h2 class="text-center">About</h2>
-              <div class="row">
-                <div class="col-sm-12">
-	          <div class="image">
-                    <img src="https://avatars3.githubusercontent.com/u/284815?v=3&s=460" id="myImage" class="img-responsive img-circle u-photo" alt="Ryan Desfosses">
-                  </div>
+	        <div class="image">
+                  <img src="https://avatars3.githubusercontent.com/u/284815?v=3&s=460" id="myImage" class="img-responsive img-circle u-photo" alt="Ryan Desfosses">
                 </div>
-                <div class="col-sm-12">
                   <p>My name is
                     <span class="p-name">Ryan Desfosses</span>
                      and this page is my little corner of the web.  Below are some buttons to some of my other pages.
                   </p>
-                  <hr>
-                  <div class="btn-toolbar center-block">
-                    <a href="https://github.com/rdesfo" class="u-url" rel="me">
-                      <button type="button" class="btn btn-success btn-lg margin-left">
-                        <i class="fa fa-github" aria-hidden="true"></i> github
-                      </button>
-                    </a>
-                    <a href="https://www.freecodecamp.com/rdesfo" rel="me">
-                      <button type="button" class="btn btn-danger btn-lg margin-left">
-                        <i class="fa fa-fire" aria-hidden="true"></i> freecodecamp
-                      </button>
-                    </a>
-                </div>
-              </div>
+              <h2 class="text-center">Elsewhere</h2>
+                <hr>
+                  <a href="https://github.com/rdesfo" class="u-url" rel="me">
+                    <p><i class="fa fa-github" aria-hidden="true"></i> github</p>
+                  </a>
+                  <a href="https://www.freecodecamp.com/rdesfo" rel="me">
+                    <p><i class="fa fa-fire" aria-hidden="true"></i> freecodecamp</p>
+                  </a>
+                  <a href="https://keybase.io/rdesfo" rel="me">
+                    <p><i class="fa fa-key" aria-hidden="true"></i> keybase</p>
+                  </a>
+                  <a href="https://launchpad.net/~rdesfo" rel="me">
+                    <p><i class="fa fa-first-order" aria-hidden="true"></i> launchpad</p>
+                  </a>
+                  <a href="https://plus.google.com/u/0/105231232958008101028" rel="me">
+                    <p><i class="fa fa-google-plus" aria-hidden="true"></i> google+</p>
+                  </a>
+                  <a href="https://hub.docker.com/r/rdesfo/"  class="u-url" rel="me">
+		    <!-- maybe in version 5
+		         https://github.com/FortAwesome/Font-Awesome/issues/3316
+		    -->
+		    <p><img src="https://cloud.githubusercontent.com/assets/4349709/4809732/286a98c8-5eae-11e4-9555-e47e9ffc7317.png" height="21" width="21"> docker </p>
+                  </a>
             </div>
-          </div>
-        </section>
-      </div> <!-- col-sm-4 -->
-      <div class="col-sm-9" id="body">
-        <section id="Activity">
+          </section>
+        </div> <!-- col-sm-3 -->
+        <div class="col-sm-10" id="body">
+          <section id="Activity">
             <h2 class="text-center">Activity</h2>
           
             $partial("templates/post-list.html")$
 
           </section>
-        </div> <!-- col-sm-8 -->
+        </div> <!-- col-sm-9 -->
       </div> <!-- row -->
     </div>  <!-- jumbotron -->
     <div class="row">
