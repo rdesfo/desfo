@@ -1,0 +1,34 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker pull rdesfo/hakyll
+
+test:
+  override:
+    - docker run -d --name hakyll -i rdesfo/hakyll bash
+    - docker cp . hakyll:/home/user/app/
+# <https://discuss.circleci.com/t/docker-1-10-0-is-available-beta/2100/52>
+# - docker exec -u root hakyll chown -R user:user /home/user/app
+# - docker exec -u user hakyll sh -c "cd /home/user/app; stack build; stack exec -- site build"
+    - sudo lxc-attach -n "$(docker inspect --format "{{.Id}}" hakyll)" -- bash -c "chown -R user:user /home/user/app"
+    - sudo lxc-attach -n "$(docker inspect --format "{{.Id}}" hakyll)" -- su user - bash -c "export LANG='C.UTF-8'; cd /home/user/app; stack build; stack exec -- site build"
+
+  post:
+    - git submodule init
+    - git submodule update
+    - cd _site && git checkout gh-pages
+    - docker cp hakyll:/home/user/app/_site .
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - git config --global user.email circleci@circleci
+      - git config --global user.name CircleCI
+      - cd $HOME/hakyll-test/_site/ && git status
+      - cd $HOME/hakyll-test/_site/ && git add --all
+      - cd $HOME/hakyll-test/_site/ && git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
+      - cd $HOME/hakyll-test/_site/ && git push origin gh-pages
