@@ -1,3 +1,4 @@
 [submodule "_site"]
 	path = _site
 	url = https://github.com/rdesfo/desfo.github.io
+	ignore = dirty
