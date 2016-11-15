@@ -28,7 +28,7 @@ deployment:
     commands:
       - git config --global user.email circleci@circleci
       - git config --global user.name CircleCI
-      - cd $HOME/_site/ && git status
-      - cd $HOME/_site/ && git add --all
-      - cd $HOME/_site/ && git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
-      - cd $HOME/_site/ && git push origin gh-pages
+      - cd $HOME/$CIRCLE_PROJECT_REPONAME/_site/ && git status
+      - cd $HOME/$CIRCLE_PROJECT_REPONAME/_site/ && git add --all
+      - cd $HOME/$CIRCLE_PROJECT_REPONAME/_site/ && git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
+      - cd $HOME/$CIRCLE_PROJECT_REPONAME/_site/ && git push origin gh-pages
