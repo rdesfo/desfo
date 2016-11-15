@@ -3,7 +3,10 @@ title: Using Docker and CircleCI with Hakyll
 author: Ryan Desfosses
 ---
 
-Juan Pedro Villa had a great article [Dr. Hakyll: Create a GitHub page with Hakyll and CircleCI](https://www.stackbuilders.com/news/dr-hakyll-create-a-github-page-with-hakyll-and-circleci)
+
+Juan Pedro Villa published a great article ([Dr. Hakyll: Create a GitHub page with Hakyll and CircleCI](https://www.stackbuilders.com/news/dr-hakyll-create-a-github-page-with-hakyll-and-circleci)) explaining how to use circleci to providing contineous deliver for a hakyll site.
+
+
 
 use docker container
 
