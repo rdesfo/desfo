@@ -22,7 +22,7 @@ This can be enabled in NixOS by simply adding a few lines to the _configuration.
     dockremap = {
       isSystemUser = true;
       uid = 10000;
-      group = "dockremap"
+      group = "dockremap";
       subUidRanges = [
         { startUid = 100000; count = 65536; }
       ];
