@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/rdesfo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://desfo.org
+  * I am rdesfo (https://keybase.io/rdesfo) on keybase.
+  * I have a public key with fingerprint 6F94 915E 20E7 9E5A 4CB7  290C 1B02 D3A2 90D7 E531
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101354c39a3ce6027d2b209d7806b5d37dd518584237eae0fdfaff128486ede96ce0a",
+            "fingerprint": "6f94915e20e79e5a4cb7290c1b02d3a290d7e531",
+            "host": "keybase.io",
+            "key_id": "1b02d3a290d7e531",
+            "kid": "0101354c39a3ce6027d2b209d7806b5d37dd518584237eae0fdfaff128486ede96ce0a",
+            "uid": "f41ebe541d6bedc2730a2ab0d39dc219",
+            "username": "rdesfo"
+        },
+        "service": {
+            "hostname": "desfo.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490978751,
+    "expire_in": 157680000,
+    "prev": "bca5971b39310a95527f7ed5b92130d1bfd13b5f02401cdfb7f1c71536b7e178",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUltIVEEY3t2s0IwszQcNXE5QD+o2c86ZMzuLXawggqToRtFlO3NmznbYbc92
+dtdLEZJGZQ9lEd2eSkkkCtLQoCyokIjNSiSCICMzKssukEFE2Byptx6bl5n//7/v
+m+//+ZunT/L4vMW+gZbmZ2+gN/OeejYNHvqxV6I2q5NCe6Uon7h4jPFkKhy1mBSS
+AARQQaqhEF0xuAZkzGQqA8JwEGgUMQUzhmAQBVVZwVznwGSmbppQDqpBjTNONIMD
+XSqTTCse4U7CseIpIauZRCUQcRlwTDjSVYNimQADUiAzRRdPhjlSoCDutJMuQ5ij
+epIHLFvkRBCesPcP/H/2nZ6QM1XIKUcqZBrlzJCxAnRZp4ApRESQuMAkd+L6Li7Q
+jhigaUv7yiSRq7YM7o7V7eNPfaIcsJ2IoCUcO2Ubdkykd6ZSiZDLStUlXFgNp+E/
+AmFqxZmYoCBUcydp2XEpBAXSSFmuIlQJIDiIESyTeG3CcnjYchEIa0EgjvsNrxaS
+1NARwZAqRIFgrU4QkrGJOUOUyFABDFKTQYUiE8gqgAYzKTahgSFSNIo5xEHJ7Wl3
+3JZCqvCpR4Rm0orE9VTa4dK+nCbvnCyP1+eZMtnn7pYnJzvv78KNFU0dXxE7NBxN
+Fy8qH9/y4PKnwo1z73+/fnfzyJxt79rqfz69MHY6eWXow63lpSgzv0Tav2RHV8eT
+c73Az7u3NVVUNg+unUZyTxcUVRT4vZuHl91pbIB5I+kvnztGe3PPWmN9d84snPfg
+VVvmUQNZs9ibk78y+nrDzRcHP/709589XHqhqv5gw8xkU1XukBkfuDH5a6gjv/Xk
+kaHbwGzvC/gW7OhvedlYUbS6LX9dlX/p/ePle65mysI1B/DIsVU/etuHO0dnbNre
+nnWte9Hsd6HLW5+/7ekv6Tx1cf34w5a821d/8YFAoW9j8frz91Z+66p8LB+tREey
+T0R8sUxPySyt61L0WG0r/w0=
+=YjvJ
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rdesfo
+
+==================================================================
+
