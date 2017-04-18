@@ -1,7 +1,11 @@
+
+<div class="h-feed section stream">
 <ul>
     $for(posts)$
-        <li>
-            <a href="$url$">$title$</a> - $date$
+      <li class="h-entry hentry as-note">
+        <p class="p-name entry-title e-content entry-content article">
+            <a href="$url$" class="dt-published published dt-updated updated u-url u-uid">$title$</a> - <time class="value">$date$</time>
+	</p>
         </li>
     $endfor$
 </ul>
