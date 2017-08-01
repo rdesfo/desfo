@@ -4,12 +4,12 @@ jobs:
     working_directory: /home/user/app
     docker:
       - image: rdesfo/hakyll
-  steps:
-    - checkout
-    - run:
+    steps:
+      - checkout
+      - run:
         name: build site
         command: 'stack build; stack exec -- site build'
-    - deploy:
+      - deploy:
         name: github pages
         command: |
           if [ "${CIRCLE_BRANCH}" == "master" ]; then
