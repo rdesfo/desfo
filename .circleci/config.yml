@@ -1,0 +1,23 @@
+version: 2
+jobs:
+  build:
+    working_directory: /home/user/app
+    docker:
+      - image: rdesfo/hakyll
+  steps:
+    - checkout
+    - run:
+        name: build site
+        command: 'stack build; stack exec -- site build'
+
+    - deploy:
+      name: github pages
+      command: |
+        if [ "${CIRCLE_BRANCH}" == "master" ]; then
+          git config --global user.email circleci@circleci
+          git config --global user.name CircleCI
+          cd _site/ && git status
+          cd _site/ && git add --all
+          cd _site/ && git commit -m "Update (`date '+%F %T %Z'`) [ci skip]"
+          cd _site/ && git push origin master
+        fi
