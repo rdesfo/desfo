@@ -5,6 +5,11 @@ import           Hakyll
 
 
 --------------------------------------------------------------------------------
+config :: Configuration
+config = defaultConfiguration {
+    destinationDirectory = "public"
+}
+
 main :: IO ()
 main = hakyll $ do
     match "images/*" $ do
